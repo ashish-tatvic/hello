@@ -1,0 +1,30 @@
+<html>
+<body onload="cook()">
+<p id="demo"></p>
+<script>
+    function cook()
+	{document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	 			var b=document.cookie;
+		if(b == "" )
+		{
+				var a= prompt("Enter your name :" ,"");
+				document.getElementById("demo").innerHTML="Welcome"+a;
+				document.cookie='username='+a;
+				document.cookie='pass=Ashish1432'
+				
+				
+		}
+		else
+		{
+			    var c=document.cookie;
+			<!--	var d=c.slice(9,c.length);-->
+				document.getElementById("demo").innerHTML="Welcome    " +c;
+		}
+	}
+	
+</script>
+</body>
+
+
+
+</html>

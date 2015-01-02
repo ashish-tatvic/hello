@@ -1,0 +1,24 @@
+<html>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$('#show').click(function(){
+  $('#input1').show(2000);
+});
+
+$('#hide').click(function(){
+  alert('hello');
+  $('#input1').hide(1000);
+});
+
+
+});
+</script>
+<input id="input1"/>
+<button id="hide">hide</button>
+<button id="show">show</button>
+
+</body>
+</html>
